@@ -20,7 +20,7 @@ There are four types of buttons:
 3.  [Contained button](#contained-button)
 4.  [Toggle button](#toggle-button)
 
-!["Button types - text, outlined, contained and toggle."](assets/buttons/buttons_types.png)
+!["Button types - text, outlined, contained and toggle."](buttons_types.png)
 
 ## Using buttons
 
