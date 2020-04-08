@@ -23,6 +23,7 @@ and make choices, with a single tap.
     * [Contained button](#contained-button): [Examples](#toggle-button) | [Anatomy](#toggle-button) 
     * [Toggle button](#toggle-button): [Examples](#toggle-button) | [Anatomy](#toggle-button) 
         * [Icon button](#toggle-button)  
+* [Common features](#theming) 
 * [Theming](#theming) 
 
 ## Usage
