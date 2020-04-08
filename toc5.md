@@ -10,7 +10,9 @@ path: /catalog/buttons/
 # Buttons
 
 [Buttons](https://material.io/components/buttons/) allow users to take actions,
-and make choices, with a single tap.
+and make choices, with a single tap.  
+<br>
+!["Button on a secreen"](Buttons_usage.png)
 
 ## Table of Contents
 * [Usage](#usage) 
