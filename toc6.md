@@ -14,7 +14,7 @@ and make choices, with a single tap.
 <br>
 !["Button on a secreen"](Buttons_usage.png)
 
-## Table of Contents
+## Contents
 * [Usage](#usage) 
 * [Text button](#text-button)
 * [Outlined button](#outlined-button)
