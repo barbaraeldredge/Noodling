@@ -22,7 +22,7 @@ and make choices, with a single tap.
 * [Toggle button](#toggle-button)
 * [Theming buttons](#theming) 
 
-## Usage
+## Usaing buttons
 
 Before you can use Material buttons, you need to add a dependency to the
 Material Components for Android library. For more information, go to the
