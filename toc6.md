@@ -20,7 +20,7 @@ and make choices, with a single tap.
 * [Outlined button](#outlined-button)
 * [Contained button](#contained-button)
 * [Toggle button](#toggle-button)
-* [Theming buttons](#theming) 
+* [Theming](#theming) 
 
 ## Usaing buttons
 
