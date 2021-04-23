@@ -41,11 +41,14 @@ There are four types of buttons: 1\. [Text button](#text-button), 2\.
 typically used for less-pronounced actions, including those located in dialogs
 and cards. In cards, text buttons help maintain an emphasis on card content.
 
-API and source code:
-*   `MaterialButton`
-    *   [Class description](https://developer.android.com/reference/com/google/android/material/button/MaterialButton)
-    *   [Class source](https://github.com/material-components/material-components-android/tree/master/lib/java/com/google/android/material/button/MaterialButton.java)
-    *   [Attributes & methods](https://developer.android.com/reference/com/google/android/material/button/MaterialButton?hl=en#summary)
+### Function
+```xml
+TextButton(onClick: () -> Unit, modifier: Modifier = Modifier, enabled: Boolean = true,
+interactionSource: MutableInteractionSource = remember { MutableInteractionSource() },
+elevation: ButtonElevation? = null, shape: Shape = MaterialTheme.shapes.small,
+border: BorderStroke? = null, colors: ButtonColors = ButtonDefaults.textButtonColors(),
+contentPadding: PaddingValues = ButtonDefaults.TextButtonContentPadding, content: RowScope.() -> Unit)
+```
 
 Example of a text button with a label:
 
@@ -90,48 +93,48 @@ In the layout:
 
 
 ## Outlined button
+[Outlined buttons](https://material.io/components/buttons/#text-button) are
+blah blahblah description here.
 
-[Outlined buttons](https://material.io/components/buttons/#outlined-button) are
-medium-emphasis buttons. They contain actions that are important, but aren’t the
-primary action in an app.
+### Function
+```xml
+TextButton(onClick: () -> Unit, modifier: Modifier = Modifier, enabled: Boolean = true,
+interactionSource: MutableInteractionSource = remember { MutableInteractionSource() },
+elevation: ButtonElevation? = null, shape: Shape = MaterialTheme.shapes.small,
+border: BorderStroke? = null, colors: ButtonColors = ButtonDefaults.textButtonColors(),
+contentPadding: PaddingValues = ButtonDefaults.TextButtonContentPadding, content: RowScope.() -> Unit)
+```
 
-API and source code:
-*   `MaterialButton`
-    *   [Class description](https://developer.android.com/reference/com/google/android/material/button/MaterialButton)
-    *   [Class source](https://github.com/material-components/material-components-android/tree/master/lib/java/com/google/android/material/button/MaterialButton.java)
-    *   [Attributes & methods](https://developer.android.com/reference/com/google/android/material/button/MaterialButton?hl=en#summary)
+Example of a text button with a label:
 
-Example of an outlined button with a text label and stroked container:
-
-!["Outlined button with purple text 'Outlined button' and grey border over a
-white background."](assets/buttons/outlined-button.png)
+!["Text button with purple text 'Text button' over a white background."](assets/buttons/text-button.png)
 
 In the layout:
 
 ```xml
 <Button
-    android:id="@+id/outlinedButton"
+    android:id="@+id/textButton"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:text="Outlined button"
-    style="?attr/materialButtonOutlinedStyle"
+    android:text="Text button"
+    style="@style/Widget.MaterialComponents.Button.TextButton"
 />
 ```
 
 In code:
 
 ```kt
-outlinedButton.setOnClickListener {
+textButton.setOnClickListener {
     // Respond to button press
 }
 ```
 
-#### Adding an icon to an outlined button
+#### Adding an icon to a text button
 
-Example of an outlined button with an icon:
+Example of a text button with an icon and label:
 
-!["Outlined button with purple text 'Outlined button', grey border and '+' icon
-over a white background."](assets/buttons/outlined-button-icon.png)
+!["Text button with purple text 'Text button' and '+' icon over a white
+background."](assets/buttons/text-button-icon.png)
 
 In the layout:
 
@@ -139,264 +142,10 @@ In the layout:
 <Button
     ...
     app:icon="@drawable/ic_add_24dp"
-    style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+    style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
 />
 ```
 
-## Contained button
-
-[Contained buttons](https://material.io/components/buttons/#contained-button)
-are high-emphasis, distinguished by their use of elevation and fill. They
-contain actions that are primary to your app.
-
-_**Note** The contained button is the default style if the style is not set._
-
-API and source code:
-*   `MaterialButton`
-    *   [Class description](https://developer.android.com/reference/com/google/android/material/button/MaterialButton)
-    *   [Class source](https://github.com/material-components/material-components-android/tree/master/lib/java/com/google/android/material/button/MaterialButton.java)
-    *   [Attributes & methods](https://developer.android.com/reference/com/google/android/material/button/MaterialButton?hl=en#summary)
-
-Example of a contained button with a text label and filled container.
-
-!["Contained button with white text 'Contained button' and purple container over
-a white background."](assets/buttons/contained-button.png)
-
-In the layout:
-
-```xml
-<Button
-    android:id="@+id/containedButton"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="Contained button"
-/>
-```
-
-_**Note:** Since this is the default type, you don't need to specify a style tag
-as long as you are using a Material Components Theme. If not, set the style to
-`@style/Widget.MaterialComponents.Button`._
-
-In code:
-
-```kt
-containedButton.setOnClickListener {
-    // Respond to button press
-}
-```
-
-#### Adding an icon to a contained button
-
-Example of a contained button with an icon:
-
-!["Contained button with white text 'Contained button', purple container and '+'
-icon over a white background."](assets/buttons/contained-button-icon.png)
-
-In the layout:
-
-```xml
-<Button
-    ...
-    app:icon="@drawable/ic_add_24dp"
-    style="@style/Widget.MaterialComponents.Button.Icon"
-/>
-```
-
-## Toggle button
-
-[Toggle buttons](https://material.io/components/buttons/#toggle-button) can be
-used to select from a group of choices.
-
-There are two types of toggle buttons:
-
-*   [Toggle button](#toggle-button)
-*   [Icon](#icon)
-
-### Toggle button
-
-To emphasize groups of related toggle buttons, a group should share a common
-container.
-
-#### Toggle button examples
-
-API and source code:
-
-*   `MaterialButtonToggleGroup`
-    *   [Class description](https://developer.android.com/reference/com/google/android/material/button/MaterialButtonToggleGroup)
-    *   [Class source](https://github.com/material-components/material-components-android/tree/master/lib/java/com/google/android/material/button/MaterialButtonToggleGroup.java)
-*   `MaterialButton`
-    *   [Class description](https://developer.android.com/reference/com/google/android/material/button/MaterialButton)
-    *   [Class source](https://github.com/material-components/material-components-android/tree/master/lib/java/com/google/android/material/button/MaterialButton.java)
-    *   [Attributes & methods](https://developer.android.com/reference/com/google/android/material/button/MaterialButton?hl=en#summary)
-
-The following example shows a toggle button with three buttons that have text
-labels.
-
-!["Toggle button example for Android with text labels - 'Button 1', 'Button 2'
-and 'Button 3' - and grey/purple borders over a white
-background."](assets/buttons/toggle-button-text.png)
-
-In the layout:
-
-```xml
-<com.google.android.material.button.MaterialButtonToggleGroup
-    android:id="@+id/toggleButton"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content">
-    <Button
-        android:id="@+id/button1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button 1"
-        style="?attr/materialButtonOutlinedStyle"
-    />
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button 2"
-        style="?attr/materialButtonOutlinedStyle"
-    />
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button 3"
-        style="?attr/materialButtonOutlinedStyle"
-    />
-</com.google.android.material.button.MaterialButtonToggleGroup>
-```
-
-In code:
-
-```kt
-toggleButton.addOnButtonCheckedListener { toggleButton, checkedId, isChecked ->
-    // Respond to button selection
-}
-```
-
-#### Implementing an icon-only toggle button
-
-The following example shows a toggle button with three buttons that have icons.
-
-!["Toggle buttons with icons - heart, eye and bell - and grey/purple borders
-over a white background."](assets/buttons/toggle-button.png)
-
-In `res/values/styles.xml`:
-
-```xml
-<style name="Widget.App.Button.OutlinedButton.IconOnly" parent="Widget.MaterialComponents.Button.OutlinedButton">
-    <item name="iconPadding">0dp</item>
-    <item name="android:insetTop">0dp</item>
-    <item name="android:insetBottom">0dp</item>
-    <item name="android:paddingLeft">12dp</item>
-    <item name="android:paddingRight">12dp</item>
-    <item name="android:minWidth">48dp</item>
-    <item name="android:minHeight">48dp</item>
-</style>
-```
-
-In the layout:
-
-```xml
-<com.google.android.material.button.MaterialButtonToggleGroup
-    ...>
-    <Button
-        ...
-        app:icon="@drawable/ic_favorite_24dp"
-        style="@style/Widget.App.Button.OutlinedButton.IconOnly"
-    />
-    <Button
-        ...
-        app:icon="@drawable/ic_remove_red_eye_24dp"
-        style="@style/Widget.App.Button.OutlinedButton.IconOnly"
-    />
-    <Button
-        ...
-        app:icon="@drawable/ic_notifications_24dp"
-        style="@style/Widget.App.Button.OutlinedButton.IconOnly"
-    />
-</com.google.android.material.button.MaterialButtonToggleGroup>
-```
-
-### Icon
-
-Icons can be used as toggle buttons when they allow selection, or deselection,
-of a single choice, such as marking an item as a favorite.
-
-#### Icon example
-
-API and source code:
-
-*   `CheckBox`
-    *   [Class description](https://developer.android.com/reference/android/widget/CheckBox)
-
-_**Note** The `CheckBox` API is just one of several inputs that can implement
-the icon button. See other
-[selection controls](https://material.io/components/selection-controls/) for
-more details._
-
-The following example shows an icon that can be used independently or in items
-of a `RecyclerView`.
-
-![Toggle icon example showing 4 images, heart icon in the upper-right corner of
-each image](assets/buttons/android_toggle_button.png)
-
-In the layout:
-
-```xml
-<CheckBox
-    android:id="@+id/icon"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:button="@drawable/sl_favourite_24dp"
-    app:buttonTint="@android:color/white"
-/>
-```
-
-In `res/drawable/sl_favourite_24dp.xml`:
-
-```xml
-<selector>
-    <item
-        android:drawable="@drawable/ic_favourite_outlined_24dp"
-        android:state_checked="false"
-    />
-    <item
-        android:drawable="@drawable/ic_favourite_filled_24dp"
-        android:state_checked="true"
-    />
-    <item android:drawable="@drawable/ic_favourite_outlined_24dp" />
-</selector>
-```
-
-In code:
-
-```kt
-icon.setOnCheckedChangeListener { checkBox, isChecked ->
-    // Respond to icon toggle
-}
-```
-
-## Theming buttons
-
-Buttons support
-[Material Theming](https://material.io/components/buttons/#theming) and can be
-customized in terms of color, typography and shape.
-
-### Button theming example
-
-API and source code:
-
-*   `MaterialButton`
-    *   [Class description](https://developer.android.com/reference/com/google/android/material/button/MaterialButton)
-    *   [Class source](https://github.com/material-components/material-components-android/tree/master/lib/java/com/google/android/material/button/MaterialButton.java)
-
-The following example shows text, outlined and contained button types with
-Material Theming.
-
-!["Button theming with three buttons - text, outlined and contained - with pink
-color theming and cut corners."](assets/buttons/button-theming.png)
 
 #### Implementing button theming
 
