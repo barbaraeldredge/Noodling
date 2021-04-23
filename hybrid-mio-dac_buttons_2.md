@@ -50,7 +50,12 @@ border: BorderStroke? = null, colors: ButtonColors = ButtonDefaults.textButtonCo
 contentPadding: PaddingValues = ButtonDefaults.TextButtonContentPadding, content: RowScope.() -> Unit)
 ```
 
-Example of a text button with a label:
+### Related interfaces
+*   [ButtonColors](https://developer.android.com/reference/kotlin/androidx/compose/material/ButtonColors)
+*   [ButtonElevation](https://developer.android.com/reference/kotlin/androidx/compose/material/ButtonElevation)
+
+
+### Examples
 
 !["Text button with purple text 'Text button' over a white background."](assets/buttons/text-button.png)
 
@@ -91,63 +96,7 @@ In the layout:
 />
 ```
 
-
-## Outlined button
-[Outlined buttons](https://material.io/components/buttons/#text-button) are
-blah blahblah description here.
-
-### Function
-```xml
-TextButton(onClick: () -> Unit, modifier: Modifier = Modifier, enabled: Boolean = true,
-interactionSource: MutableInteractionSource = remember { MutableInteractionSource() },
-elevation: ButtonElevation? = null, shape: Shape = MaterialTheme.shapes.small,
-border: BorderStroke? = null, colors: ButtonColors = ButtonDefaults.textButtonColors(),
-contentPadding: PaddingValues = ButtonDefaults.TextButtonContentPadding, content: RowScope.() -> Unit)
-```
-
-Example of a text button with a label:
-
-!["Text button with purple text 'Text button' over a white background."](assets/buttons/text-button.png)
-
-In the layout:
-
-```xml
-<Button
-    android:id="@+id/textButton"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="Text button"
-    style="@style/Widget.MaterialComponents.Button.TextButton"
-/>
-```
-
-In code:
-
-```kt
-textButton.setOnClickListener {
-    // Respond to button press
-}
-```
-
-#### Adding an icon to a text button
-
-Example of a text button with an icon and label:
-
-!["Text button with purple text 'Text button' and '+' icon over a white
-background."](assets/buttons/text-button-icon.png)
-
-In the layout:
-
-```xml
-<Button
-    ...
-    app:icon="@drawable/ic_add_24dp"
-    style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
-/>
-```
-
-
-#### Implementing button theming
+## Theming buttons
 
 Using theme attributes and styles in `res/values/styles.xml` (themes all buttons
 and affects other components):
