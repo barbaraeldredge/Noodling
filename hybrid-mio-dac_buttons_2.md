@@ -7,13 +7,13 @@ and make choices, with a single tap.
 arches" with filled "Learn more" button"](assets/buttons/buttons_hero.png)
 
 **Contents**
+*   [Using buttons](#using-buttons)
 *   [Types of buttons](#types)
     *   [Text button](#text-button)
     *   [Outlined button](#outlined-button)
     *   [Contained button](#contained-button)
     *   [Toggle button](#toggle-button)
 *   [Theming buttons](#theming-buttons)
-*   [Making buttons accessible](#making-buttons-accessible)
 
 ## Using buttons
 
@@ -103,6 +103,8 @@ In the layout:
     style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
 />
 ```
+
+<same structure for the rest of the button types>
 
 ## Theming buttons
 
