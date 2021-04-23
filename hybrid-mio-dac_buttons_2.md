@@ -104,7 +104,7 @@ In the layout:
 />
 ```
 
-<same structure for the rest of the button types>
+(same structure for the rest of the button types)
 
 ## Theming buttons
 
