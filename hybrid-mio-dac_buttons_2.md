@@ -7,15 +7,11 @@ and make choices, with a single tap.
 arches" with filled "Learn more" button"](assets/buttons/buttons_hero.png)
 
 **Contents**
+*   [Types of buttons](#types)
+*   [Theming buttons](#theming-buttons)
+*   [Making buttons accessible](#making-buttons-accessible)
 
-*   [Using buttons](#using-buttons)
-*   [Text button](#text-button)
-*   [Outlined button](#outlined-button)
-*   [Contained button](#contained-button)
-*   [Toggle button](#toggle-button)
-*   [Theming](#theming-buttons)
-
-## Using buttons
+## Setup
 
 Before you can use Material buttons, you need to add a dependency to the
 Material Components for Android library. For more information, go to the
@@ -27,17 +23,7 @@ _**Note:** `<Button>` is auto-inflated as
 `MaterialComponentsViewInflater` when using a non-Bridge
 `Theme.MaterialComponents.*` theme._
 
-### Making buttons accessible
-
-Buttons support content labeling for accessibility and are readable by most
-screen readers, such as TalkBack. Text rendered in buttons is automatically
-provided to accessibility services. Additional content labels are usually
-unnecessary.
-
-For more information on content labels, go to the
-[Android accessibility help guide](https://support.google.com/accessibility/android/answer/7158690).
-
-### Types
+## Types
 
 There are four types of buttons: 1\. [Text button](#text-button), 2\.
 [Outlined button](#outlined-button), 3\. [Contained button](#contained-button),
@@ -491,3 +477,12 @@ or using one of the styles in the layout (affects only this button):
     style="@style/Widget.App.Button"
 />
 ```
+## Making buttons accessible
+
+Buttons support content labeling for accessibility and are readable by most
+screen readers, such as TalkBack. Text rendered in buttons is automatically
+provided to accessibility services. Additional content labels are usually
+unnecessary.
+
+For more information on content labels, go to the
+[Android accessibility help guide](https://support.google.com/accessibility/android/answer/7158690).
