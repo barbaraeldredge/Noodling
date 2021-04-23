@@ -8,6 +8,10 @@ arches" with filled "Learn more" button"](assets/buttons/buttons_hero.png)
 
 **Contents**
 *   [Types of buttons](#types)
+    *   [Text button](#text-button)
+    *   [Outlined button](#outlined-button)
+    *   [Contained button](#contained-button)
+    *   [Toggle button](#toggle-button)
 *   [Theming buttons](#theming-buttons)
 *   [Making buttons accessible](#making-buttons-accessible)
 
@@ -37,16 +41,13 @@ There are four types of buttons: 1\. [Text button](#text-button), 2\.
 typically used for less-pronounced actions, including those located in dialogs
 and cards. In cards, text buttons help maintain an emphasis on card content.
 
-### Text button examples
-
 API and source code:
-
 *   `MaterialButton`
     *   [Class description](https://developer.android.com/reference/com/google/android/material/button/MaterialButton)
     *   [Class source](https://github.com/material-components/material-components-android/tree/master/lib/java/com/google/android/material/button/MaterialButton.java)
     *   [Attributes & methods](https://developer.android.com/reference/com/google/android/material/button/MaterialButton?hl=en#summary)
 
-The following example shows a text button with a text label.
+Example of a text button with a label:
 
 !["Text button with purple text 'Text button' over a white background."](assets/buttons/text-button.png)
 
@@ -72,7 +73,7 @@ textButton.setOnClickListener {
 
 #### Adding an icon to a text button
 
-The following example shows a text button with an icon.
+Example of a text button with an icon and label:
 
 !["Text button with purple text 'Text button' and '+' icon over a white
 background."](assets/buttons/text-button-icon.png)
@@ -94,17 +95,13 @@ In the layout:
 medium-emphasis buttons. They contain actions that are important, but aren’t the
 primary action in an app.
 
-### Outlined button examples
-
 API and source code:
-
 *   `MaterialButton`
     *   [Class description](https://developer.android.com/reference/com/google/android/material/button/MaterialButton)
     *   [Class source](https://github.com/material-components/material-components-android/tree/master/lib/java/com/google/android/material/button/MaterialButton.java)
     *   [Attributes & methods](https://developer.android.com/reference/com/google/android/material/button/MaterialButton?hl=en#summary)
 
-The following example shows an outlined button with a text label and stroked
-container.
+Example of an outlined button with a text label and stroked container:
 
 !["Outlined button with purple text 'Outlined button' and grey border over a
 white background."](assets/buttons/outlined-button.png)
@@ -131,7 +128,7 @@ outlinedButton.setOnClickListener {
 
 #### Adding an icon to an outlined button
 
-The following example shows an outlined button with an icon.
+Example of an outlined button with an icon:
 
 !["Outlined button with purple text 'Outlined button', grey border and '+' icon
 over a white background."](assets/buttons/outlined-button-icon.png)
@@ -154,17 +151,13 @@ contain actions that are primary to your app.
 
 _**Note** The contained button is the default style if the style is not set._
 
-### Contained button examples
-
 API and source code:
-
 *   `MaterialButton`
     *   [Class description](https://developer.android.com/reference/com/google/android/material/button/MaterialButton)
     *   [Class source](https://github.com/material-components/material-components-android/tree/master/lib/java/com/google/android/material/button/MaterialButton.java)
     *   [Attributes & methods](https://developer.android.com/reference/com/google/android/material/button/MaterialButton?hl=en#summary)
 
-The following example shows a contained button with a text label and a filled
-container.
+Example of a contained button with a text label and filled container.
 
 !["Contained button with white text 'Contained button' and purple container over
 a white background."](assets/buttons/contained-button.png)
@@ -194,7 +187,7 @@ containedButton.setOnClickListener {
 
 #### Adding an icon to a contained button
 
-The following example shows a contained button with an icon.
+Example of a contained button with an icon:
 
 !["Contained button with white text 'Contained button', purple container and '+'
 icon over a white background."](assets/buttons/contained-button-icon.png)
