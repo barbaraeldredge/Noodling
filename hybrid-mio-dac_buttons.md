@@ -58,6 +58,7 @@ API and source code:
 *   `MaterialButton`
     *   [Class description](https://developer.android.com/reference/com/google/android/material/button/MaterialButton)
     *   [Class source](https://github.com/material-components/material-components-android/tree/master/lib/java/com/google/android/material/button/MaterialButton.java)
+    *   [Attributes & methods](https://developer.android.com/reference/com/google/android/material/button/MaterialButton?hl=en#summary)
 
 The following example shows a text button with a text label.
 
@@ -100,58 +101,6 @@ In the layout:
 />
 ```
 
-### Anatomy and key properties
-
-A text button has a text label, a transparent container and an optional icon.
-
-![Text button anatomy diagram](assets/buttons/text_button_anatomy.png)
-
-1.  Text label
-2.  Icon
-
-#### Text label attributes
-
-Element        | Attribute                | Related method(s)                 | Default value
--------------- | ------------------------ | --------------------------------- | -------------
-**Text label** | `android:text`           | `setText`<br/>`getText`           | `null`
-**Color**      | `android:textColor`      | `setTextColor`<br/>`getTextColor` | `?attr/colorPrimary` (see all [states](https://github.com/material-components/material-components-android/tree/master/lib/java/com/google/android/material/button/res/color/mtrl_text_btn_text_color_selector.xml))
-**Typography** | `android:textAppearance` | `setTextAppearance`               | `?attr/textAppearanceButton`
-
-#### Container attributes
-
-Element          | Attribute             | Related method(s)                                                            | Default value
----------------- | --------------------- | ---------------------------------------------------------------------------- | -------------
-**Color**        | `app:backgroundTint`  | `setBackgroundColor`<br/>`setBackgroundTintList`<br/>`getBackgroundTintList` | `@android:color/transparent` (see all [states](https://github.com/material-components/material-components-android/tree/master/lib/java/com/google/android/material/button/res/color/mtrl_btn_text_btn_bg_color_selector.xml))
-**Stroke color** | `app:strokeColor`     | `setStrokeColor`<br/>`setStrokeColorResource`<br/>`getStrokeColor`           | `null`
-**Stroke width** | `app:strokeWidth`     | `setStrokeWidth`<br/>`setStrokeWidthResource`<br/>`getStrokeWidth`           | `0dp`
-**Shape**        | `app:shapeAppearance` | `setShapeAppearanceModel`<br/>`getShapeAppearanceModel`                      | `?attr/shapeAppearanceSmallComponent`
-**Elevation**    | `app:elevation`       | `setElevation`<br/>`getElevation`                                            | `0dp`
-**Ripple color** | `app:rippleColor`     | `setRippleColor`<br/>`setRippleColorResource`<br/>`getRippleColor`           | `?attr/colorPrimary` at 12% opacity (see all [states](https://github.com/material-components/material-components-android/tree/master/lib/java/com/google/android/material/button/res/color/mtrl_btn_text_btn_ripple_color.xml))
-
-#### Icon attributes
-
-Element                                         | Attribute         | Related method(s)                                         | Default value
------------------------------------------------ | ----------------- | --------------------------------------------------------- | -------------
-**Icon**                                        | `app:icon`        | `setIcon`<br/>`setIconResource`<br/>`getIcon`             | `null`
-**Color**                                       | `app:iconTint`    | `setIconTint`<br/>`setIconTintResource`<br/>`getIconTint` | `?attr/colorPrimary` (see all [states](https://github.com/material-components/material-components-android/tree/master/lib/java/com/google/android/material/button/res/color/mtrl_text_btn_text_color_selector.xml))
-**Size**                                        | `app:iconSize`    | `setIconSize`<br/>`getIconSize`                           | `wrap_content`
-**Gravity** (position relative to text label)   | `app:iconGravity` | `setIconGravity`<br/>`getIconGravity`                     | `start`
-**Padding** (space between icon and text label) | `app:iconPadding` | `setIconPadding`<br/>`getIconPadding`                     | `4dp`
-
-#### Styles
-
-| Element                | Style                                                          |
-| ---------------------- | -------------------------------------------------------------- |
-| **Default style**      | `Widget.MaterialComponents.Button.TextButton`                  |
-| **Icon style**         | `Widget.MaterialComponents.Button.TextButton.Icon`             |
-| **Full Width Buttons** | `Widget.MaterialComponents.Button.TextButton.Dialog.FullWidth` |
-
-Default style theme attribute: `?attr/borderlessButtonStyle`
-
-See the full list of
-[styles](https://github.com/material-components/material-components-android/tree/master/lib/java/com/google/android/material/button/res/values/styles.xml)
-and
-[attrs](https://github.com/material-components/material-components-android/tree/master/lib/java/com/google/android/material/button/res/values/attrs.xml).
 
 ## Outlined button
 
@@ -166,6 +115,7 @@ API and source code:
 *   `MaterialButton`
     *   [Class description](https://developer.android.com/reference/com/google/android/material/button/MaterialButton)
     *   [Class source](https://github.com/material-components/material-components-android/tree/master/lib/java/com/google/android/material/button/MaterialButton.java)
+    *   [Attributes & methods](https://developer.android.com/reference/com/google/android/material/button/MaterialButton?hl=en#summary)
 
 The following example shows an outlined button with a text label and stroked
 container.
@@ -210,59 +160,6 @@ In the layout:
 />
 ```
 
-### Anatomy and key properties
-
-An outlined button has a text label, a stroked container and an optional icon.
-
-![Outlined button anatomy diagram](assets/buttons/outlined_button_anatomy.png)
-
-1.  Text label
-2.  Container
-3.  Icon
-
-#### Text label attributes
-
-Element        | Attribute                | Related method(s)                 | Default value
--------------- | ------------------------ | --------------------------------- | -------------
-**Text label** | `android:text`           | `setText`<br/>`getText`           | `null`
-**Color**      | `android:textColor`      | `setTextColor`<br/>`getTextColor` | `?attr/colorPrimary` (see all [states](https://github.com/material-components/material-components-android/tree/master/lib/java/com/google/android/material/button/res/color/mtrl_text_btn_text_color_selector.xml))
-**Typography** | `android:textAppearance` | `setTextAppearance`               | `?attr/textAppearanceButton`
-
-#### Container attributes
-
-Element          | Attribute             | Related method(s)                                                            | Default value
----------------- | --------------------- | ---------------------------------------------------------------------------- | -------------
-**Color**        | `app:backgroundTint`  | `setBackgroundColor`<br/>`setBackgroundTintList`<br/>`getBackgroundTintList` | `@android:color/transparent` (see all [states](https://github.com/material-components/material-components-android/tree/master/lib/java/com/google/android/material/button/res/color/mtrl_btn_text_btn_bg_color_selector.xml))
-**Stroke color** | `app:strokeColor`     | `setStrokeColor`<br/>`setStrokeColorResource`<br/>`getStrokeColor`           | `?attr/colorOnSurface` at 12% opacity (see all [states](https://github.com/material-components/material-components-android/tree/master/lib/java/com/google/android/material/button/res/color/mtrl_btn_stroke_color_selector.xml))
-**Stroke width** | `app:strokeWidth`     | `setStrokeWidth`<br/>`setStrokeWidthResource`<br/>`getStrokeWidth`           | `1dp`
-**Shape**        | `app:shapeAppearance` | `setShapeAppearanceModel`<br/>`getShapeAppearanceModel`                      | `?attr/shapeAppearanceSmallComponent`
-**Elevation**    | `app:elevation`       | `setElevation`<br/>`getElevation`                                            | `0dp`
-**Ripple color** | `app:rippleColor`     | `setRippleColor`<br/>`setRippleColorResource`<br/>`getRippleColor`           | `?attr/colorPrimary` at 12% opacity (see all [states](https://github.com/material-components/material-components-android/tree/master/lib/java/com/google/android/material/button/res/color/mtrl_btn_text_btn_ripple_color.xml))
-
-#### Icon attributes
-
-Element                                         | Attribute         | Related method(s)                                         | Default value
------------------------------------------------ | ----------------- | --------------------------------------------------------- | -------------
-**Icon**                                        | `app:icon`        | `setIcon`<br/>`setIconResource`<br/>`getIcon`             | `null`
-**Color**                                       | `app:iconTint`    | `setIconTint`<br/>`setIconTintResource`<br/>`getIconTint` | `?attr/colorPrimary` (see all [states](https://github.com/material-components/material-components-android/tree/master/lib/java/com/google/android/material/button/res/color/mtrl_text_btn_text_color_selector.xml))
-**Size**                                        | `app:iconSize`    | `setIconSize`<br/>`getIconSize`                           | `wrap_content`
-**Gravity** (position relative to text label)   | `app:iconGravity` | `setIconGravity`<br/>`getIconGravity`                     | `start`
-**Padding** (space between icon and text label) | `app:iconPadding` | `setIconPadding`<br/>`getIconPadding`                     | `4dp`
-
-#### Styles
-
-Element           | Style
------------------ | ------------------------------------------------------
-**Default style** | `Widget.MaterialComponents.Button.OutlinedButton`
-**Icon style**    | `Widget.MaterialComponents.Button.OutlinedButton.Icon`
-
-Default style theme attribute: `?attr/materialButtonOutlinedStyle`
-
-See the full list of
-[styles](https://github.com/material-components/material-components-android/tree/master/lib/java/com/google/android/material/button/res/values/styles.xml)
-and
-[attrs](https://github.com/material-components/material-components-android/tree/master/lib/java/com/google/android/material/button/res/values/attrs.xml).
-
 ## Contained button
 
 [Contained buttons](https://material.io/components/buttons/#contained-button)
@@ -278,6 +175,7 @@ API and source code:
 *   `MaterialButton`
     *   [Class description](https://developer.android.com/reference/com/google/android/material/button/MaterialButton)
     *   [Class source](https://github.com/material-components/material-components-android/tree/master/lib/java/com/google/android/material/button/MaterialButton.java)
+    *   [Attributes & methods](https://developer.android.com/reference/com/google/android/material/button/MaterialButton?hl=en#summary)
 
 The following example shows a contained button with a text label and a filled
 container.
@@ -325,61 +223,6 @@ In the layout:
 />
 ```
 
-### Anatomy and key properties
-
-A contained button has a text label, a filled container and an optional icon.
-
-![Contained button anatomy diagram](assets/buttons/contained_button_anatomy.png)
-
-1.  Text label
-2.  Container
-3.  Icon
-
-#### Text label attributes
-
-Element        | Attribute                | Related method(s)                 | Default value
--------------- | ------------------------ | --------------------------------- | -------------
-**Text label** | `android:text`           | `setText`<br/>`getText`           | `null`
-**Color**      | `android:textColor`      | `setTextColor`<br/>`getTextColor` | `?attr/colorOnPrimary` (see all [states](https://github.com/material-components/material-components-android/tree/master/lib/java/com/google/android/material/button/res/color/mtrl_btn_text_color_selector.xml))
-**Typography** | `android:textAppearance` | `setTextAppearance`               | `?attr/textAppearanceButton`
-
-#### Container attributes
-
-Element          | Attribute             | Related method(s)                                                            | Default value
----------------- | --------------------- | ---------------------------------------------------------------------------- | -------------
-**Color**        | `app:backgroundTint`  | `setBackgroundColor`<br/>`setBackgroundTintList`<br/>`getBackgroundTintList` | `?attr/colorPrimary` (see all [states](https://github.com/material-components/material-components-android/tree/master/lib/java/com/google/android/material/button/res/color/mtrl_btn_bg_color_selector.xml))
-**Stroke color** | `app:strokeColor`     | `setStrokeColor`<br/>`setStrokeColorResource`<br/>`getStrokeColor`           | `null`
-**Stroke width** | `app:strokeWidth`     | `setStrokeWidth`<br/>`setStrokeWidthResource`<br/>`getStrokeWidth`           | `0dp`
-**Shape**        | `app:shapeAppearance` | `setShapeAppearanceModel`<br/>`getShapeAppearanceModel`                      | `?attr/shapeAppearanceSmallComponent`
-**Elevation**    | `app:elevation`       | `setElevation`<br/>`getElevation`                                            | `2dp`
-**Ripple color** | `app:rippleColor`     | `setRippleColor`<br/>`setRippleColorResource`<br/>`getRippleColor`           | `?attr/colorOnPrimary` at 24% opacity (see all [states](https://github.com/material-components/material-components-android/tree/master/lib/java/com/google/android/material/button/res/color/mtrl_btn_ripple_color.xml))
-
-#### Icon attributes
-
-Element                                         | Attribute         | Related method(s)                                         | Default value
------------------------------------------------ | ----------------- | --------------------------------------------------------- | -------------
-**Icon**                                        | `app:icon`        | `setIcon`<br/>`setIconResource`<br/>`getIcon`             | `null`
-**Color**                                       | `app:iconTint`    | `setIconTint`<br/>`setIconTintResource`<br/>`getIconTint` | `?attr/colorOnPrimary` (see all [states](https://github.com/material-components/material-components-android/tree/master/lib/java/com/google/android/material/button/res/color/mtrl_btn_text_color_selector.xml))
-**Size**                                        | `app:iconSize`    | `setIconSize`<br/>`getIconSize`                           | `wrap_content`
-**Gravity** (position relative to text label)   | `app:iconGravity` | `setIconGravity`<br/>`getIconGravity`                     | `start`
-**Padding** (space between icon and text label) | `app:iconPadding` | `setIconPadding`<br/>`getIconPadding`                     | `4dp`
-
-#### Styles
-
-Element                   | Style
-------------------------- | -------------------------------------------------------
-**Default style**         | `Widget.MaterialComponents.Button`
-**Icon style**            | `Widget.MaterialComponents.Button.Icon`
-**Unelevated style**      | `Widget.MaterialComponents.Button.UnelevatedButton`
-**Unelevated icon style** | `Widget.MaterialComponents.Button.UnelevatedButton.Icon`
-
-Default style theme attribute: `?attr/materialButtonStyle`
-
-See the full list of
-[styles](https://github.com/material-components/material-components-android/tree/master/lib/java/com/google/android/material/button/res/values/styles.xml)
-and
-[attrs](https://github.com/material-components/material-components-android/tree/master/lib/java/com/google/android/material/button/res/values/attrs.xml).
-
 ## Toggle button
 
 [Toggle buttons](https://material.io/components/buttons/#toggle-button) can be
@@ -405,6 +248,7 @@ API and source code:
 *   `MaterialButton`
     *   [Class description](https://developer.android.com/reference/com/google/android/material/button/MaterialButton)
     *   [Class source](https://github.com/material-components/material-components-android/tree/master/lib/java/com/google/android/material/button/MaterialButton.java)
+    *   [Attributes & methods](https://developer.android.com/reference/com/google/android/material/button/MaterialButton?hl=en#summary)
 
 The following example shows a toggle button with three buttons that have text
 labels.
@@ -495,35 +339,6 @@ In the layout:
     />
 </com.google.android.material.button.MaterialButtonToggleGroup>
 ```
-
-### Anatomy and key properties
-
-A toggle button has a shared stroked container, icons and/or text labels.
-
-![Toggle button anatomy](assets/buttons/toggle_button_anatomy.png)
-
-1.  Container
-2.  Icon
-
-#### Selection attributes
-
-Element                | Attribute               | Related method(s)                                | Default value
----------------------- | ----------------------- | ------------------------------------------------ | -------------
-**Single selection**   | `app:singleSelection`   | `setSingleSelection`<br/>`isSingleSelection`     | `false`
-**Selection required** | `app:selectionRequired` | `setSelectionRequired`<br/>`isSelectionRequired` | `false`
-
-#### Styles
-
-Element           | Style
------------------ | -----------------------------------------------------
-**Default style** | `Widget.MaterialComponents.MaterialButtonToggleGroup`
-
-Default style theme attribute: `?attr/materialButtonToggleGroupStyle`
-
-See the full list of
-[styles](https://github.com/material-components/material-components-android/tree/master/lib/java/com/google/android/material/button/res/values/styles.xml)
-and
-[attrs](https://github.com/material-components/material-components-android/tree/master/lib/java/com/google/android/material/button/res/values/attrs.xml).
 
 ### Icon
 
