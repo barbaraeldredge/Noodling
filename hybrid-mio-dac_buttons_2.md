@@ -55,7 +55,7 @@ contentPadding: PaddingValues = ButtonDefaults.TextButtonContentPadding, content
 *   [ButtonElevation](https://developer.android.com/reference/kotlin/androidx/compose/material/ButtonElevation)
 
 
-### Examples
+### Example – text button
 
 !["Text button with purple text 'Text button' over a white background."](assets/buttons/text-button.png)
 
@@ -79,9 +79,7 @@ textButton.setOnClickListener {
 }
 ```
 
-#### Adding an icon to a text button
-
-Example of a text button with an icon and label:
+### Example – text button with icon
 
 !["Text button with purple text 'Text button' and '+' icon over a white
 background."](assets/buttons/text-button-icon.png)
